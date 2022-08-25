@@ -6,6 +6,9 @@
  * User Manual available at https://docs.gradle.org/7.5/userguide/building_java_projects.html
  */
 
+version = project.findProperty("version") as String
+group = project.findProperty("group") as String
+
 plugins {
     // Apply the org.jetbrains.kotlin.jvm Plugin to add support for Kotlin.
     id("org.jetbrains.kotlin.jvm") version "1.6.21"
